@@ -1,0 +1,17 @@
+# Sample Residual Plot
+predicted_vals_1 = model . fittedvalues
+residuals_1 = model . resid
+plt . scatter ( predicted_vals_1 , residuals_1 )
+plt . axhline ( y =0 , color = ’ red ’ , linestyle = ’ -- ’)
+plt . xlabel ( ’ Predicted ␣ Values ␣ ’)
+plt . ylabel ( ’ Residuals ␣ ’)
+plt . title ( ’ Residual ␣ plot ␣ of ␣ the ␣ Original ␣ Model ’)
+plt . show ()
+# Refined Model Scatter with regression Line
+sns . regplot ( data = df , x = ’R & D ␣ Spend ’ , y = ’ Profit ’)
+plt . xlabel ( ’R & D ␣ Spend ’)
+14
+plt . ylabel ( ’ Startup ␣ Profits ’)
+plt . title ( ’ Scatter ␣ Plot ␣ of ␣ the ␣ Simplified ␣ Model ␣ with ␣ Regression
+␣ Line ’)
+plt . show ()
